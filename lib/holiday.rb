@@ -54,7 +54,7 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].each do |holiday, supply_list|
     supply_list.each do |supply|
       supplies << supply
-    end 
+    end
   end
   return supplies
 end
@@ -73,10 +73,10 @@ def all_supplies_in_holidays(holiday_hash)
       puts "#{holiday}:"
       supplies.each do |supply|
         puts supply
-      end 
-    end 
-      
-  end 
+      end
+    end
+
+  end
 
 end
 
