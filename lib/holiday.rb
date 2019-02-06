@@ -69,14 +69,15 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   string = []
   holiday_hash.each do |season, holidays|
-    puts "#{season}:".capitalize
+    string << "#{season}:".capitalize
     holidays.each do |holiday, supplies_list|
-      puts "  #{holiday}:".capitalize
+      string << "/n  #{holiday}:".capitalize
       supplies_list.each do |supply|
-        puts supply.capitalize
+        string << "supply"
       end
     end
   end
+  puts string
 end
 
 def all_holidays_with_bbq(holiday_hash)
